@@ -1,6 +1,6 @@
 html {
     width: 100%;
-    height: 100%
+    height: 100%;
     min-height: 100%;
     min-width: 320px;
     color: #212529;
@@ -123,56 +123,6 @@ iframe {
     text-align:center;
 }
 
-/* Services Section */
-.card-custom {
-  overflow: hidden;
-  min-height: 400px;
-  min-width: 280px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
-}
-
-.card-custom-img {
-  height: 200px;
-  min-height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-color: inherit;
-}
-
-/* First border-left-width setting is a fallback */
-.card-custom-img::after {
-  position: absolute;
-  content: '';
-  top: 161px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-top-width: 40px;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left-width: 545px;
-  border-left-width: calc(575px - 5vw);
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: inherit;
-}
-
-.card-custom-avatar img {
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
-  position: absolute;
-  top: 100px;
-  left: 1.25rem;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-}
-
 /* How we work section */
 .c-hww-counters {
     counter-reset: counter-name;
@@ -183,21 +133,6 @@ iframe {
     position: relative;
     box-shadow: 0 0 2px rgba(10, 10, 10, 0.3);
     background-color: #f0f0f0;
-
-}
-.c-hww-counters-items::before {
-    counter-increment: counter-name;
-    content: counter(counter-name);
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    font-size: 19rem;
-    color: rgba(10, 10, 10, 0.2);
-}
-
-/* Why Korea Section */
-.c-why-counters {
-    counter-reset: counter-name;
 }
 
 .c-why-counters-items {
@@ -277,7 +212,7 @@ iframe {
 .c-footer-logo {
     width: 85px;
     height: 85px;
-    background: url(images/golden_roof_korea_medical_tourism_logo.png) 100% center no-repeat;
+    
     background-size: 85px auto;
     display: block;
     text-indent: -9999px;
@@ -287,32 +222,8 @@ iframe {
   );
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    gap: 2%;
-}
-
-#footer {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.footer, a.a-footer {
+.text-color-white {
     color: #f8f9fa;
-}
-
-.footer {
-    padding:15px;
-}
-
-
-#end {
-    height: 5rem;
-    margin: auto;
-    text-align: center;
-    padding: 3%;
 }
 
 /* Responsive elements */
@@ -348,3 +259,7 @@ iframe {
     border-bottom: .15rem solid #343a40;
     margin: .25rem 0 .25rem 0;
 }
+
+/*
+background: url(/static/images/golden_roof_korea_medical_tourism_logo.png) 100% center no-repeat;
+*/
