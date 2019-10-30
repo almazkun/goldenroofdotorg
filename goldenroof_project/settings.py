@@ -76,8 +76,12 @@ WSGI_APPLICATION = "goldenroof_project.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": os.getenv("DB_NAME", "super_db"),
+        "USER": os.getenv("DB_USER", "super_user"),
+        "PASSWORD": os.getenv("DB_PASS", "p2463328"),
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
@@ -115,8 +119,6 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 STATIC_URL = "/static/"
 
