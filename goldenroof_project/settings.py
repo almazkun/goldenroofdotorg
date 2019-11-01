@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,6 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv("SECRET_KEY", "4xv&kr+!u(5qv6x$(5svf-@g8lhv!ra4(5&rkhu5l0b00qaal+")
 
 # SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
 
 
 ALLOWED_HOSTS = ["goldenroof.herokuapp.com", "127.0.0.1"]
@@ -79,6 +81,11 @@ WSGI_APPLICATION = "goldenroof_project.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": os.getenv("DB_NAME", "super_db"),
+        "USER": os.getenv("DB_USER", "super_user"),
+        "PASSWORD": os.getenv("DB_PASS", "p2463328"),
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
@@ -110,8 +117,13 @@ USE_L10N = True
 USE_TZ = True
 
 
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
@@ -142,4 +154,3 @@ SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 SECURE_HSTS_SECONDS = 60
 SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
-DEBUG = True
