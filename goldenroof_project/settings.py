@@ -25,7 +25,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "4xv&kr+!u(5qv6x$(5svf-@g8lhv!ra4(5&rkhu5l0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG_MODE", True)
 
-ALLOWED_HOSTS = ["goldenroof.herokuapp.com"]
+ALLOWED_HOSTS = ["goldenroof.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
@@ -123,7 +123,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 STATIC_URL = "/static/"
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
@@ -131,3 +131,12 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 MEDIA_URL = "/media/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+
+CSRF_COOKIE_SECURE = True
+
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+SECURE_BROWSER_XSS_FILTER = True
+
+
