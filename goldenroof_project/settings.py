@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.getenv("SECRET_KEY", "4xv&kr+!u(5qv6x$(5svf-@g8lhv!ra4(5&rkhu5l0b00qaal+")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG_MODE", True)
+DEBUG = True
 
 ALLOWED_HOSTS = ["goldenroof.herokuapp.com", "127.0.0.1"]
 
@@ -79,11 +79,6 @@ WSGI_APPLICATION = "goldenroof_project.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": os.getenv("DB_NAME", "super_db"),
-        "USER": os.getenv("DB_USER", "super_user"),
-        "PASSWORD": os.getenv("DB_PASS", "p2463328"),
-        "HOST": "localhost",
-        "PORT": "5432",
     }
 }
 
@@ -139,12 +134,11 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 
 SECURE_BROWSER_XSS_FILTER = True
 
-SESSION_COOKIE_SECURE = True
-
 X_FRAME_OPTIONS = "DENY"
 
-SECURE_HSTS_SECONDS = os.getenv("SECURE_HSTS_SECONDS", "60")
 
-SECURE_SSL_REDIRECT = os.getenv("SECURE_SSL_REDIRECT", False)
-
-SECURE_HSTS_INCLUDE_SUBDOMAINS = os.getenv("SECURE_HSTS_INCLUDE_SUBDOMAINS", "60")
+# Uncomment before deploy
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+SECURE_HSTS_SECONDS = 60
+SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
