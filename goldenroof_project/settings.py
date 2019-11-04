@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "4xv&kr+!u(5qv6x$(5svf-@g8lhv!ra4(5&rkhu5l0
 DEBUG = False
 
 
-ALLOWED_HOSTS = ["goldenroof.herokuapp.com", "127.0.0.1", "goldenroof.org"]
+ALLOWED_HOSTS = ["goldenroof.herokuapp.com", "127.0.0.1", "goldenroof.org", "www.goldenroof.org"]
 
 
 # Application definition
@@ -150,7 +150,7 @@ X_FRAME_OPTIONS = "DENY"
 
 
 # Uncomment before deploy
-# SECURE_SSL_REDIRECT = True
-# SESSION_COOKIE_SECURE = True
-# SECURE_HSTS_SECONDS = 60
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+SECURE_HSTS_SECONDS = 60
+SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
