@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "4xv&kr+!u(5qv6x$(5svf-@g8lhv!ra4(5&rkhu5l0
 DEBUG = False
 
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["goldenroof.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    "whitenoise.runserver_nostatic",
+    'whitenoise.runserver_nostatic',
     "django.contrib.staticfiles",
     "eng.apps.EngConfig",
 ]
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -132,7 +132,7 @@ STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),]
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 MEDIA_URL = "/media/"
