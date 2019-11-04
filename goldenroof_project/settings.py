@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", "4xv&kr+!u(5qv6x$(5svf-@g8lhv!ra4(5&rkhu5l0
 DEBUG = False
 
 
-ALLOWED_HOSTS = ["goldenroof.herokuapp.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["goldenroof.herokuapp.com", "127.0.0.1", "goldenroof.org"]
 
 
 # Application definition
