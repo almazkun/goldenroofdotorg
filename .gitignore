@@ -103,8 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# Keys
-
+secret.py
 
 
 # staticfiles
