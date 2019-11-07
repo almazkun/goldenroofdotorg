@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div style="height:10vh;"></div>
+    <div class="container" style="min-height:80vh;">
+        <img src="/static/cover_image_plaseholder.jpg">
+        <img src="{% static article.img_link %}">
+        <h1 class="mt-4">{{ article.title }}</h1>
+        <p>{{ article.description }}</p>
+        <p>{{ article.author }}</p>
+        <p>{{ article.content }}</p>
+        <p>{{ article.created_on }}</p>
+        <p>{{ article.updated_on }}</p>
+        <p>{{ article.views }}</p>
+        <p>{{ article.is_published }}</p>
+        <p>{{ article.category }}</p>
+        <div class="d-flex">
+            {% for keyword in article.keywords.all %}
+                <p class="d-flex-item mx-1">{{ keyword }}</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

@@ -24,11 +24,12 @@ class Category(models.Model):
 
     class Meta:
         verbose_name = "Category"
+        verbose_name_plural = "Categories"
         ordering = ["name"]
 
 
 class Article(models.Model):
-    IMG_LINK = "static/cover_image_plaseholder.jpg"
+    IMG_LINK = "/images/cover_image_plaseholder.jpg"
     title = models.CharField(verbose_name="Title", max_length=255)
     author = models.ForeignKey(User, verbose_name="Author", on_delete=models.CASCADE)
     description = models.CharField(verbose_name="Description", max_length=280)
@@ -48,11 +49,11 @@ class Article(models.Model):
         verbose_name = "Article"
         ordering = ["-created_on"]
 
-    
+
     def __str__(self):
         return self.title[:20]
 
-    
+
     def get_absolute_url(self):
         return reverse("eng:article_detail", kwargs={"slug": self.slug})
 

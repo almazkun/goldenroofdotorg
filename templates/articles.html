@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container py-4">
+        <div class="h-100 my-4">
+
+            {% for article in articles %}
+                <a href="{% url "detail" article.slug %}"><h2 class="py-4">{{ article.title }}</a>
+            {% endfor %}
+
+        </div>
+    </div>
+
+{% endblock content%}
