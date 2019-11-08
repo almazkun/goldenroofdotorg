@@ -5,18 +5,24 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('eng', '0001_initial'),
-    ]
+    dependencies = [("eng", "0001_initial")]
 
     operations = [
         migrations.AlterModelOptions(
-            name='category',
-            options={'ordering': ['name'], 'verbose_name': 'Category', 'verbose_name_plural': 'Categories'},
+            name="category",
+            options={
+                "ordering": ["name"],
+                "verbose_name": "Category",
+                "verbose_name_plural": "Categories",
+            },
         ),
         migrations.AlterField(
-            model_name='article',
-            name='img_link',
-            field=models.CharField(default='/static/cover_image_plaseholder.jpg', max_length=255, verbose_name='Cover image'),
+            model_name="article",
+            name="img_link",
+            field=models.CharField(
+                default="/static/cover_image_plaseholder.jpg",
+                max_length=255,
+                verbose_name="Cover image",
+            ),
         ),
     ]

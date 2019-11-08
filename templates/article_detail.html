@@ -3,13 +3,29 @@
 
 {% block content %}
     <div style="height:10vh;"></div>
-    <div class="container" style="min-height:80vh;">
-        <img src="/static/cover_image_plaseholder.jpg">
-        <img src="{% static article.img_link %}">
-        <h1 class="mt-4">{{ article.title }}</h1>
-        <p>{{ article.description }}</p>
-        <p>{{ article.author }}</p>
-        <p>{{ article.content }}</p>
+    <div class="container c-article-body" style="max-width: 680px; min-height:80vh;">
+        <h1 class="mt-4 display-4">{{ article.title }}</h1>
+        <p class="lead mt-2">{{ article.description }}</p>
+        <div class="d-flex mt-3 mb-4">
+            <div class="d-flex-item">
+                <img class="img img-fluid c-footer-logo" src="{% static "images/golden_roof_korea_medical_tourism_logo.png" %}"  style="height:48px; width:48px;">
+            </div>
+            <div class="c-center pl-2">
+                <h6 class="mb-0">{{ article.author.first_name }} {{ article.author.last_name }}
+                </br>
+                <span class="text-muted">{{ article.updated_on|date:"M j, y" }}</span></h6>
+            </div>
+        </div>
+        <figure class="mt-4">
+            <div class="">
+                <img class="img img-fluid rounded"  src="{% static article.img_link %}">
+            </div>
+            <figcaption class="text-center text-muted mt-2">Photo of the Bungdang Hospital</figcaption>
+        </figure>
+        <div class="mt-4 pt-4">
+            {{ article.content|safe }}
+        </div>
+        
         <p>{{ article.created_on }}</p>
         <p>{{ article.updated_on }}</p>
         <p>{{ article.views }}</p>

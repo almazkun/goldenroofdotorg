@@ -4,6 +4,9 @@ from django.views import generic
 from .models import Keyword, Category, Article
 
 
+import markdown
+
+
 def homepage_view(request):
     return render(request, "home.html")
 
@@ -22,5 +25,8 @@ class DetailView(generic.DetailView):
     def get_object(self):
         obj = super(DetailView, self).get_object()
         obj.update_views()
-        
+
+        md = markdown.Markdown(extensions=["markdown.extensions.extra"])
+        obj.content = md.convert(obj.content)
+
         return obj
