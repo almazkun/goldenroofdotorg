@@ -1,14 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="container py-4">
-        <div class="h-100 my-4">
-
+    <div style="height:10vh;">Navigation offset</div>
+    <div class="lead">Categories</div>
+    <div class="my-4 py-4 container" style="max-width: 680px;">
+ 
+        <h1 class="display-4">Publications</h1>
             {% for article in articles %}
-                <a href="{% url "detail" article.slug %}"><h2 class="py-4">{{ article.title }}</a>
+                <div class="">
+                    <a href="{% url "detail" article.slug %}">
+                        <div class="">
+                            <p class="m-0 text-uppercase text-muted">{{ article.category }}</p>
+                            <h2 class="c-display-5 font-weight-bold">{{ article.title }}</h2>
+                            <p class="lead">{{ article.description }}</p>
+                            <div>
+                                <h6 class="mb-0">{{ article.author.first_name }} {{ article.author.last_name }}
+                                </br>
+                                <span class="text-muted">{{ article.updated_on|date:"M j, y" }} <i class="fas fa-heart m-2"></i>{{ article.views }}</span></h6>
+                            </div>
+                        </div>
+                        
+                    </a>
+                </div>
             {% endfor %}
 
-        </div>
+
     </div>
 
 {% endblock content%}

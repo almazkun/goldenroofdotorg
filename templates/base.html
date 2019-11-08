@@ -12,7 +12,8 @@
         <meta name="keywords" content="{% block keywords %}{% endblock keywords %}medical tourism, medical tourism Korea, medical tourism Korea agency, health tourism, health tourism Korea, health tourism Korea agency, surgical tourism, surgical tourism Korea, surgical tourism Korea agency, medical travel, medical travel Korea, medical travel Korea agency" />
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
         <!-- Icons from https://fontawesome.com/-->
@@ -59,7 +60,7 @@
             </div>
         </nav>
 
-        <section class="container h-100">
+        <section class="container h-100" style="min-height:80vh;">
             {% block content %}
             {% endblock content %}
         </section>
@@ -115,7 +116,7 @@
                     </div>
                 </div>
                 <div>
-                    <a class="c-center text-color-white pb-4" href="#"><i class="display-3 fas fa-angle-up"></i></a>
+                    <a class="c-center text-color-white pb-4" href="#"><i class="c-display-5 fas fa-angle-up"></i></a>
                 </div>
             </div>
         </footer>

@@ -3,7 +3,7 @@
 
 {% block content %}
     <div style="height:10vh;"></div>
-    <div class="container c-article-body" style="max-width: 680px; min-height:80vh;">
+    <div class="container c-article-body my-4" style="max-width: 680px; min-height:80vh;">
         <h1 class="mt-4 display-4">{{ article.title }}</h1>
         <p class="lead mt-2">{{ article.description }}</p>
         <div class="d-flex mt-3 mb-4">
@@ -25,16 +25,33 @@
         <div class="mt-4 pt-4">
             {{ article.content|safe }}
         </div>
-        
-        <p>{{ article.created_on }}</p>
-        <p>{{ article.updated_on }}</p>
-        <p>{{ article.views }}</p>
-        <p>{{ article.is_published }}</p>
-        <p>{{ article.category }}</p>
-        <div class="d-flex">
+        <div class="mb-4 pb-4">
+            <p class="display-4 text-muted text-center">. . .</p>
+        </div>
+
+        <div class="d-flex text-muted">
             {% for keyword in article.keywords.all %}
-                <p class="d-flex-item mx-1">{{ keyword }}</p>
+                <p class="p-2 m-1 bg-light rounded">{{ keyword }}</p>
             {% endfor %}
+        </div>
+        <div class="mt-3 d-flex lead">
+            <div class="p-1 text-danger flex-grow-1">
+                <i class="fas fa-heart m-2"></i>{{ article.views }}
+            </div>
+            <div class="p-1 mr-2"><i class="fab fa-facebook-square"></i></div>
+            <div class="p-1 mr-2"><i class="fab fa-twitter-square"></i></div>
+            <div class="p-1"><i class="fas fa-link"></i></div>
+        </div>
+        <hr class="bg-light">
+        <div class="d-flex my-4 py-4">
+            <div>
+                <img class="c-footer-logo" src="{% static "images/golden_roof_korea_medical_tourism_logo.png" %}"  style="height:96px; width:96px;">
+            </div>
+            <div class="pl-4">
+                <p class="text-muted">WRITTEN BY
+                <h5 class="font-weight-bold">{{ article.author.first_name }} {{ article.author.last_name }}</h5>
+                <p class="text-muted">The Universe is: Expanding, cooling, and dark. It starts with a bang! Cosmology Science writer, astrophysicist, science communicator & NASA columnist.</p>
+            </div>
         </div>
     </div>
 {% endblock content %}
