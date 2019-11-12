@@ -68,3 +68,6 @@ class Article(models.Model):
 
     def contetn_to_markdown(self):
         return markdown.markdown(self.content, extensions=["markdown.extensions.extra"])
+
+
+

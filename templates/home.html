@@ -11,6 +11,11 @@
                 <hr class="m-2 my-md-4">
                 <p class="c-display-5">HAPPEN</p>
                 <div class="btn-block my-4">
+                    <form method="POST" class="btn btn-danger mx-1 px-4">
+                        {% csrf_token %}
+                        <input type="email" class="form-control" placeholder="youremail@gmail.com" name="email_request">
+                        <button class="btn btn-danger mx-1 px-4">Send</button>
+                    </form>
                     <a class="btn c-btn-wide c-btn-red" href="https://api.whatsapp.com/send?phone=821050904297&text=I%20am%20interested%20in%20medical%20treatment%20in%20Korea." 
                     role="button" title="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i> Get a Free estimate</a>
                 </div>

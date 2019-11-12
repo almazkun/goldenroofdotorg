@@ -125,6 +125,22 @@ USE_L10N = True
 USE_TZ = True
 
 
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = "smtp.yandex.ru"
+
+EMAIL_PORT = 587
+
+EMAIL_HOST_USER = "hello@goldenroof.org"
+
+EMAIL_HOST_PASSWORD = "Qq123456"
+
+DEFAULT_FROM_EMAIL = "almaz.kun@yandex.com"
+
+EMAIL_USE_TLS = True
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
