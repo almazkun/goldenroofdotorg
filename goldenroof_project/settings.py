@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import dj_database_url
 
+from secret import LOCAL_EMAIL_USER, LOCAL_EMAIL_PASSWORD, LOCAL_DEFAULT_FROM_EMAIL
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -132,11 +134,11 @@ EMAIL_HOST = "smtp.yandex.ru"
 
 EMAIL_PORT = 587
 
-EMAIL_HOST_USER = "hello@goldenroof.org"
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", LOCAL_EMAIL_USER)
 
-EMAIL_HOST_PASSWORD = "Qq123456"
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", LOCAL_EMAIL_PASSWORD)
 
-DEFAULT_FROM_EMAIL = "almaz.kun@yandex.com"
+DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", LOCAL_DEFAULT_FROM_EMAIL)
 
 EMAIL_USE_TLS = True
 

@@ -70,4 +70,16 @@ class Article(models.Model):
         return markdown.markdown(self.content, extensions=["markdown.extensions.extra"])
 
 
+class EmailRequest(models.Model):
+    created_on = models.DateTimeField(verbose_name="Created", auto_now_add=True)
+    name = models.EmailField()
+    answered = models.BooleanField(verbose_name="Answered", default=False)
+
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name = "Email"
+        verbose_name_plural = "Emails"
+        ordering = ["created_on"]
 

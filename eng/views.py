@@ -2,12 +2,7 @@ from django.shortcuts import render
 from django.views import generic
 
 from .models import Keyword, Category, Article
-from .forms import send_email
-
-
-from django.core.exceptions import ValidationError
-from django.core.validators import validate_email
-
+from .utils import send_email, save_email
 
 import markdown
 
@@ -15,18 +10,12 @@ import markdown
 def homepage_view(request):
     if "email_request" in request.POST:
         email_request = request.POST["email_request"]
-        print(email_request)
-        print(validate_email(email_request))
-        if validate_email(email_request):
-            try:
-                print(email_request)
-                send_email(email_request)
-                return render(request, "succes.html")
-            except:
-                return render(request, "unsucces.html")
-        else:
-            return render(request, "badsucces.html")
-        
+        save_email(email_request)
+        try:
+            send_email(email_request)
+            return render(request, "succes.html")
+        except:
+            return render(request, "unsucces.html")
     return render(request, "home.html")
 
 
