@@ -5,18 +5,20 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('eng', '0006_auto_20191113_1101'),
-    ]
+    dependencies = [("eng", "0006_auto_20191113_1101")]
 
     operations = [
         migrations.AlterModelOptions(
-            name='emailrequest',
-            options={'ordering': ['created_on'], 'verbose_name': 'Email', 'verbose_name_plural': 'Emails'},
+            name="emailrequest",
+            options={
+                "ordering": ["created_on"],
+                "verbose_name": "Email",
+                "verbose_name_plural": "Emails",
+            },
         ),
         migrations.AddField(
-            model_name='emailrequest',
-            name='answered',
-            field=models.BooleanField(default=False, verbose_name='Answered'),
+            model_name="emailrequest",
+            name="answered",
+            field=models.BooleanField(default=False, verbose_name="Answered"),
         ),
     ]

@@ -16,7 +16,7 @@ import dj_database_url
 try:
     from secret import LOCAL_EMAIL_USER, LOCAL_EMAIL_PASSWORD, LOCAL_DEFAULT_FROM_EMAIL
 except:
-    pass
+    LOCAL_EMAIL_USER, LOCAL_EMAIL_PASSWORD, LOCAL_DEFAULT_FROM_EMAIL = "", "", ""
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -129,8 +129,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-
+# E-mail sending configs
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 EMAIL_HOST = "smtp.yandex.ru"
@@ -162,7 +161,7 @@ MEDIA_URL = "/media/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-
+# Security options
 CSRF_COOKIE_SECURE = True
 
 SECURE_CONTENT_TYPE_NOSNIFF = True
@@ -171,14 +170,13 @@ SECURE_BROWSER_XSS_FILTER = True
 
 X_FRAME_OPTIONS = "DENY"
 
+SESSION_COOKIE_SECURE = True
 
-# Uncomment before deploy
-# SECURE_SSL_REDIRECT = True
-# SESSION_COOKIE_SECURE = True
 SECURE_HSTS_SECONDS = 60
+
 SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 SITE_DESCRIPTION = "We are Officially registered, Licensed, Insured and Experienced medical tourism agency. We make medical tourism Quick, Easy and Effortless since 2014. Contact us 24/7 and we will take care of everything"
