@@ -13,6 +13,10 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import dj_database_url
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> development
 try:
     from secret import LOCAL_EMAIL_USER, LOCAL_EMAIL_PASSWORD, LOCAL_DEFAULT_FROM_EMAIL
 except:
@@ -129,7 +133,12 @@ USE_L10N = True
 
 USE_TZ = True
 
+<<<<<<< HEAD
 # E-mail sending configs
+=======
+
+# E_mail sending configs
+>>>>>>> development
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 EMAIL_HOST = "smtp.yandex.ru"
@@ -172,6 +181,14 @@ X_FRAME_OPTIONS = "DENY"
 
 SESSION_COOKIE_SECURE = True
 
+<<<<<<< HEAD
+=======
+# Uncomment before deploy
+# SECURE_SSL_REDIRECT = True
+
+SESSION_COOKIE_SECURE = True
+
+>>>>>>> development
 SECURE_HSTS_SECONDS = 60
 
 SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
