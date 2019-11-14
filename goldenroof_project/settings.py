@@ -131,6 +131,7 @@ USE_L10N = True
 USE_TZ = True
 
 
+# E_mail sending configs
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 EMAIL_HOST = "smtp.yandex.ru"
@@ -174,8 +175,11 @@ X_FRAME_OPTIONS = "DENY"
 
 # Uncomment before deploy
 # SECURE_SSL_REDIRECT = True
-# SESSION_COOKIE_SECURE = True
+
+SESSION_COOKIE_SECURE = True
+
 SECURE_HSTS_SECONDS = 60
+
 SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
 
 # SECURITY WARNING: don't run with debug turned on in production!
