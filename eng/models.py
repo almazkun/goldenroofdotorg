@@ -77,9 +77,8 @@ class EmailRequest(models.Model):
 
     def __str__(self):
         return self.name
-    
+
     class Meta:
         verbose_name = "Email"
         verbose_name_plural = "Emails"
         ordering = ["created_on"]
-

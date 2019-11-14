@@ -13,7 +13,11 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 import dj_database_url
 
-from secret import LOCAL_EMAIL_USER, LOCAL_EMAIL_PASSWORD, LOCAL_DEFAULT_FROM_EMAIL
+
+try:
+    from secret import LOCAL_EMAIL_USER, LOCAL_EMAIL_PASSWORD, LOCAL_DEFAULT_FROM_EMAIL
+except:
+    LOCAL_EMAIL_USER, LOCAL_EMAIL_PASSWORD, LOCAL_DEFAULT_FROM_EMAIL = "", "", ""
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -125,7 +129,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"

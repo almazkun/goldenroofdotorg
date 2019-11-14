@@ -5,18 +5,18 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('eng', '0005_emailrequest'),
-    ]
+    dependencies = [("eng", "0005_emailrequest")]
 
     operations = [
         migrations.AlterModelOptions(
-            name='emailrequest',
-            options={'ordering': ['created_on'], 'verbose_name': 'email', 'verbose_name_plural': 'Emails'},
+            name="emailrequest",
+            options={
+                "ordering": ["created_on"],
+                "verbose_name": "email",
+                "verbose_name_plural": "Emails",
+            },
         ),
         migrations.RenameField(
-            model_name='emailrequest',
-            old_name='email',
-            new_name='name',
+            model_name="emailrequest", old_name="email", new_name="name"
         ),
     ]
