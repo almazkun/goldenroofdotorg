@@ -183,6 +183,6 @@ SECURE_HSTS_SECONDS = 60
 SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 SITE_DESCRIPTION = "We are Officially registered, Licensed, Insured and Experienced medical tourism agency. We make medical tourism Quick, Easy and Effortless since 2014. Contact us 24/7 and we will take care of everything"
