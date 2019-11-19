@@ -276,6 +276,10 @@ iframe {
     margin: .25rem 0 .25rem 0;
 }
 
+.carousel-caption {
+    color: inherit;
+}
+
 /*
 
 */

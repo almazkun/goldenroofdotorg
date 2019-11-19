@@ -13,7 +13,6 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
         <!-- Icons from https://fontawesome.com/-->
@@ -24,26 +23,30 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/fav/favicon-16x16.png' %}">
         <link rel="manifest" href="{% static 'images/fav/manifest.json' %}"/>
         <link rel="mask-icon" href="{% static 'images/fav/safari-pinned-tab.svg' %}"/>
-                <!-- Jicosite -->
+        
+        <!-- Jicosite -->
         <script src="//code.jivosite.com/widget.js" data-jv-id="2dKlgipJ5x" async></script>
     </head>
         
     <body>
-
-        <nav class="navbar navbar-light py-3 d-lg-none">
+        <!-- For Desktop -->
+        <nav class="navbar navbar-light py-3 d-none d-lg-block">
             <div class="container">
                 <a class="nav-link text-center px-md-3" href="https://goldenroof.org" title="Licensed, Insured and Experienced medical tourism agency">
                     <img class="img img-fluid c-logo c-logo-size-3">
                 </a>
-                d-lg-none
+                <a class="nav-item nav-link" href="#about_us" title="About us">About us</a>
+                <a class="nav-link text-center" href="#how_we_work" title="What we do">Services</a>
+                <a class="nav-link text-center" href="#hospital_snubh" title="Our partner Hospitals">Hospitals</a>
+                <a class="nav-link text-center" href="#contacts" title="Contact us">Contacts</a>
             </div>
         </nav>
 
 
-
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-3 p-md-3 d-none ">
+        <!-- For Mobile -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-3 p-md-3 d-lg-none">
             <a class="nav-link text-center px-md-3" href="https://goldenroof.org" title="Licensed, Insured and Experienced medical tourism agency">
-                <img class="card-img-top nav-logo" src="{% static 'images/golden_roof_korea_medical_tourism_logo.png' %}" alt="Golden Roof">
+                <img class="card-img-top c-logo c-logo-size-1" src="{% static 'images/golden_roof_korea_medical_tourism_logo.png' %}" alt="Golden Roof">
             </a>
             <a class="nav-link text-center px-md-3" href="tel:+821050904297" role="button" title="Call us, phone number in Korea">
                 <i class="fas fa-phone nav_icon"></i>
