@@ -88,14 +88,7 @@ WSGI_APPLICATION = "goldenroof_project.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
-"""
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
@@ -106,7 +99,7 @@ DATABASES = {
         "PORT": "5432",
     }
 }
-"""
+
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES["default"].update(db_from_env)
 
@@ -181,9 +174,6 @@ X_FRAME_OPTIONS = "DENY"
 
 SESSION_COOKIE_SECURE = True
 
-# Uncomment before deploy
-# SECURE_SSL_REDIRECT = True
-
 SESSION_COOKIE_SECURE = True
 
 SECURE_HSTS_SECONDS = 60
@@ -191,6 +181,6 @@ SECURE_HSTS_SECONDS = 60
 SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 SITE_DESCRIPTION = "We are Officially registered, Licensed, Insured and Experienced medical tourism agency. We make medical tourism Quick, Easy and Effortless since 2014. Contact us 24/7 and we will take care of everything"

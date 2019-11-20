@@ -12,7 +12,7 @@
         <meta name="keywords" content="{% block keywords %}{% endblock keywords %}medical tourism, medical tourism Korea, medical tourism Korea agency, health tourism, health tourism Korea, health tourism Korea agency, surgical tourism, surgical tourism Korea, surgical tourism Korea agency, medical travel, medical travel Korea, medical travel Korea agency" />
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
         <!-- Icons from https://fontawesome.com/-->
@@ -29,32 +29,40 @@
     </head>
         
     <body>
-        <!-- For Desktop -->
-        <nav class="navbar navbar-light py-3 d-none d-lg-block">
-            <div class="container">
-                <a class="nav-link text-center px-md-3" href="https://goldenroof.org" title="Licensed, Insured and Experienced medical tourism agency">
-                    <img class="img img-fluid c-logo c-logo-size-3">
-                </a>
-                <a class="nav-item nav-link" href="#about_us" title="About us">About us</a>
-                <a class="nav-link text-center" href="#how_we_work" title="What we do">Services</a>
-                <a class="nav-link text-center" href="#hospital_snubh" title="Our partner Hospitals">Hospitals</a>
-                <a class="nav-link text-center" href="#contacts" title="Contact us">Contacts</a>
-            </div>
-        </nav>
-
+        <!-- Navigation For Desktop -->
+        <div class="container d-none d-lg-flex">
+            <nav class="navbar navbar-light">
+                <div class="navbar-brand">
+                    <a class="nav-link" href="https://goldenroof.org" title="Licensed, Insured and Experienced medical tourism agency"><img class="img img-fluid c-logo c-logo-size-3"></a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#about_us" title="About us">About us</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#how_we_work" title="What we do">Services</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#hospital_snubh" title="Our partner Hospitals">Hospitals</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="#contacts" title="Contact us">Contacts</a>
+                </div>
+            </nav>
+        </div>
+       
 
         <!-- For Mobile -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-3 p-md-3 d-lg-none">
-            <a class="nav-link text-center px-md-3" href="https://goldenroof.org" title="Licensed, Insured and Experienced medical tourism agency">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light py-1 px-3 d-lg-none">
+            <a class="nav-link text-center p-0" href="https://goldenroof.org" title="Licensed, Insured and Experienced medical tourism agency">
                 <img class="card-img-top c-logo c-logo-size-1" src="{% static 'images/golden_roof_korea_medical_tourism_logo.png' %}" alt="Golden Roof">
             </a>
-            <a class="nav-link text-center px-md-3" href="tel:+821050904297" role="button" title="Call us, phone number in Korea">
-                <i class="fas fa-phone nav_icon"></i>
+            <a class="nav-link text-center p-0 lead" href="tel:+821050904297" role="button" title="Call us, phone number in Korea">
+                <i class="fas fa-phone"></i>
             </a>
-            <a class="nav-link text-center px-md-3" href="https://api.whatsapp.com/send?phone=821050904297&text=I%20am%20interested%20in%20medical%20treatment%20in%20Korea." role="button" title="Chat with us on WhatsApp">
-                <i class="fab fa-whatsapp nav_icon"></i>
+            <a class="nav-link text-center p-0 lead" href="https://api.whatsapp.com/send?phone=821050904297&text=I%20am%20interested%20in%20medical%20treatment%20in%20Korea." role="button" title="Chat with us on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggler">
@@ -74,13 +82,15 @@
                 </ul>
             </div>
         </nav>
+        <!-- Offset for top on mobile-->
+        <div class="d-lg-none" style="height:5rem;"></div>
 
-        <section class="container h-100" style="min-height:80vh;">
+        <section class="container">
             {% block content %}
             {% endblock content %}
         </section>
 
-        <footer id="footer" class="small bg-dark text-color-white py-4">
+        <footer id="footer" class="small bg-dark c-text-white py-4">
             <div class="container">
                 <div class="d-flex flex-row mb-4">
                     <div class="mr-4">
@@ -98,6 +108,20 @@
                         <h5>Your personal health guide!</h5>
                         <p>We make medical tourism to South Korea happen.</p>
                         <p>Officially registered, licensed and insured medical tourism agency in South Korea.</p>
+                        <div class="btn-block my-5">
+                            <form method="POST" class="">
+                            {% csrf_token %}
+                            <label for="inputPassword5">Get a Free estimate:</label>
+                                <div class="">
+                                    <div class="input-group mb-2">
+                                        <input name="email_request" type="email" class="form-control c-border-red" id="inlineFormInputGroup" placeholder="youremail@gmail.com" required>
+                                        <div class="input-group-prepend ">
+                                            <button class="input-group-text c-text-white c-border-red c-bg-red rounded-right" type="submit"><i class="fas fa-envelope c-bg-red"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
 
                     <div class="col-6 col-sm-3 mb-4">
@@ -122,16 +146,16 @@
                     </div>
                     <div class="col-6 col-sm-3 mb-4">
                         <h5>Contacts</h5>
-                        <p><a class="text-color-white" href="tel:+821050904297" title="Call us, phone number in Korea"><i class="fas fa-phone" aria-hidden="true"></i> +82 10 5090 4297</a></p>
-                        <p><a class="text-color-white" href="https://api.whatsapp.com/send?phone=821050904297&text=I%20am%20interested%20in%20medical%20treatment%20in%20Korea." title="Chat with us on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i> +82 10 5090 4297</span></a></p>
-                        <p><a class="text-color-white" href="mailto:hello@goldenroof.org" title="E-amil address"><i class="fas fa-envelope" aria-hidden="true"></i> hello@goldenroof.org</a></p>
-                        <p><a class="text-color-white" href="https://goldenroof.org">165-1 Amco Heritz, Jeongja dong, Bundang-gu, Seongnam City, Gyeonggi<br/><span class="font-weight-bold">Republic of Korea</span></a></p>
-                        <p><a class="text-color-white" href="https://goldenroof.org">Copyright &copy; 2014 - {% now "Y"%} Golden Roof Medical Tour Partners</a></p>
-                        <p><a class="text-color-white" href="http://almazkun.github.io">Proudly made by <span class="font-weight-bold">almazkun</span></a></p>
+                        <p><a class="c-text-white" href="tel:+821050904297" title="Call us, phone number in Korea"><i class="fas fa-phone" aria-hidden="true"></i> +82 10 5090 4297</a></p>
+                        <p><a class="c-text-white" href="https://api.whatsapp.com/send?phone=821050904297&text=I%20am%20interested%20in%20medical%20treatment%20in%20Korea." title="Chat with us on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i> +82 10 5090 4297</span></a></p>
+                        <p><a class="c-text-white" href="mailto:hello@goldenroof.org" title="E-amil address"><i class="fas fa-envelope" aria-hidden="true"></i> hello@goldenroof.org</a></p>
+                        <p><a class="c-text-white" href="https://goldenroof.org">165-1 Amco Heritz, Jeongja dong, Bundang-gu, Seongnam City, Gyeonggi<br/><span class="font-weight-bold">Republic of Korea</span></a></p>
+                        <p><a class="c-text-white" href="https://goldenroof.org">Copyright &copy; 2014 - {% now "Y"%} Golden Roof Medical Tour Partners</a></p>
+                        <p><a class="c-text-white" href="http://almazkun.github.io">Proudly made by <span class="font-weight-bold">almazkun</span></a></p>
                     </div>
                 </div>
                 <div>
-                    <a class="c-center text-color-white pb-4" href="#"><i class="c-display-5 fas fa-angle-up"></i></a>
+                    <a class="c-center c-text-white pb-4" href="#"><i class="c-display-5 fas fa-angle-up"></i></a>
                 </div>
             </div>
         </footer>
