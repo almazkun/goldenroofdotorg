@@ -33,8 +33,7 @@ iframe {
     100%;
 }
 
-.c-form {    
-    min-width: 100%;
+.c-form {
     height: 60rem;
     min-height: 90vh;
 }
@@ -69,6 +68,11 @@ iframe {
     padding-right: .5rem;
     padding-left: .5rem;
 }
+
+.c-bg-trans {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 
 /* Buttons */
 .btn-block {
