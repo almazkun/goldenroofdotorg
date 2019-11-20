@@ -132,12 +132,12 @@ iframe {
   );
 }
 
-
 /* How we work section */
 .c-hww-counters {
     counter-reset: counter-name;
     display:flex;
 }
+
 .c-hww-counters-items {
     border-radius: 5px;
     position: relative;
@@ -214,11 +214,7 @@ iframe {
     font-weight: 400;
 }
 
-
-
-
 /* Responsive elements */
-
 @media screen and (max-width: 400px) {
     #intro {
         margin-top: 3em;
@@ -254,7 +250,3 @@ iframe {
 .carousel-caption {
     color: inherit;
 }
-
-/*
-
-*/

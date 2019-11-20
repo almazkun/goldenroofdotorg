@@ -1,30 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div style="height:10vh;">Navigation offset</div>
-    <div class="lead">Categories</div>
-    <div class="my-4 py-4 container" style="max-width: 680px;">
- 
+
+    <div class="my-4  container" style="max-width: 680px;">
         <h1 class="display-4">Publications</h1>
-            {% for article in articles %}
-                <div class="">
-                    <a href="{% url "detail" article.slug %}">
-                        <div class="">
-                            <p class="m-0 text-uppercase text-muted">{{ article.category }}</p>
-                            <h2 class="c-display-5 font-weight-bold">{{ article.title }}</h2>
-                            <p class="lead">{{ article.description }}</p>
-                            <div>
-                                <h6 class="mb-0">{{ article.author.first_name }} {{ article.author.last_name }}
-                                </br>
-                                <span class="text-muted">{{ article.updated_on|date:"M j, y" }} <i class="fas fa-heart m-2"></i>{{ article.views }}</span></h6>
-                            </div>
-                        </div>
-                        
-                    </a>
-                </div>
-            {% endfor %}
-
-
+        {% for article in articles %}
+            <a class="m-4" href="{% url "detail" article.slug %}">
+                    <p class="m-0 text-uppercase text-muted">{{ article.category }}</p>
+                    <h2 class="c-display-5 font-weight-bold">{{ article.title }}</h2>
+                    <p class="lead">{{ article.description }}</p>
+                    <div>
+                        <h6 class="mb-0">{{ article.author.first_name }} {{ article.author.last_name }}
+                        </br>
+                        <span class="text-muted">{{ article.updated_on|date:"M j, Y" }} <i class="fas fa-heart m-2"></i>{{ article.views }}</span></h6>
+                    </div>
+            </a>
+        {% endfor %}
     </div>
 
 {% endblock content%}

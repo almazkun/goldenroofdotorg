@@ -2,8 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <div style="height:10vh;"></div>
-    <div class="container c-article-body my-4" style="max-width: 680px; min-height:80vh;">
+<div class="container c-article-body my-4" style="max-width: 680px;">
         <h1 class="mt-4 display-4">{{ article.title }}</h1>
         <p class="lead mt-2">{{ article.description }}</p>
         <div class="d-flex mt-3 mb-4">
@@ -13,7 +12,7 @@
             <div class="c-center pl-2">
                 <h6 class="mb-0">{{ article.author.first_name }} {{ article.author.last_name }}
                 </br>
-                <span class="text-muted">{{ article.updated_on|date:"M j, y" }}</span></h6>
+                <span class="text-muted">{{ article.updated_on|date:"M j, Y" }}</span></h6>
             </div>
         </div>
         <figure class="mt-4">
