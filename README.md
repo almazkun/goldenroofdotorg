@@ -50,7 +50,7 @@ Webpage for [goldenroof.org](https://goldenroof.org)
     * links in change to django URLs
     * DNS google webmaster verification
     * Sitemap generate
-
+    
 ## Website sheck
 ### this links should be checked and error resolved
 https://seositecheckup.com/seo-audit
