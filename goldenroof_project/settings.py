@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
     "eng.apps.EngConfig",
+    "django.contrib.sitemaps",
 ]
 
 MIDDLEWARE = [

@@ -60,7 +60,7 @@ class Article(models.Model):
         return self.title[:20]
 
     def get_absolute_url(self):
-        return reverse("eng:article_detail", kwargs={"slug": self.slug})
+        return reverse("article_detail", kwargs={"slug": self.slug})
 
     def update_views(self):
         self.views += 1

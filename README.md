@@ -4,7 +4,6 @@ Webpage for [goldenroof.org](https://goldenroof.org)
 
 ## THIS sprint ends 11/29
 1. TODO
-    * Django routers in views and URLs
     * Sitemap generate
     * blog posts 
         1. Pictures upload/media
@@ -13,7 +12,12 @@ Webpage for [goldenroof.org](https://goldenroof.org)
     * Add facebook metatags to header
     * Connect facebook chat to the webpage
         1. create a facebook business page
-
+    * Custom Error page for 4** and 5**
+    * TESTS
+        1. testModels
+        2. testUtils
+        3. testSitemaps
+    
 
 ## Back log
 1. NEW Index page
