@@ -4,7 +4,9 @@ Webpage for goldenroof.org
 
 ## THIS sprint ends 11/29
     * Django routers in views and URLs
-    * Import from PDF first article
+    * sitemap generate
+    * Pictures upload/media
+    * General layout for blog posts and Elements(like definition, data sources)
 
 ## Back log
 1. NEW Index page
@@ -33,6 +35,7 @@ Webpage for goldenroof.org
 1. Article pages outlook
 2. send us e-mail form 
 3. links in change to django URLs
+* DNS google webmaster verification
 
 ## Website sheck
 ### this links should be checked and error resolved
