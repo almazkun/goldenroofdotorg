@@ -4,7 +4,7 @@ Webpage for [goldenroof.org](https://goldenroof.org)
 
 ## THIS sprint ends 11/29
 1. TODO
-    * Sitemap generate
+
     * blog posts 
         1. Pictures upload/media
         2. General layout for blog posts and Elements(like definition, data sources)
@@ -49,6 +49,7 @@ Webpage for [goldenroof.org](https://goldenroof.org)
     * send us e-mail form 
     * links in change to django URLs
     * DNS google webmaster verification
+    * Sitemap generate
 
 ## Website sheck
 ### this links should be checked and error resolved
