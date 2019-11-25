@@ -15,6 +15,6 @@ class StaticViewSitemap(Sitemap):
 class ArticleSitemap(Sitemap):
     def items(self):
         return Article.objects.all()
-    
+
     def lastmod(self, obj):
         return obj.created_on

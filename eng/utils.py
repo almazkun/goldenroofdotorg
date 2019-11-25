@@ -8,7 +8,7 @@ def send_email(email_request):
     subject = "Online form"
     message = "Thank you! We've got your message"
     email_from = settings.EMAIL_HOST_USER
-    recipient_list = [email_request]
+    recipient_list = [email_request, email_from]
     send_mail(subject, message, email_from, recipient_list)
 
 

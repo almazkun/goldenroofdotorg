@@ -6,7 +6,7 @@ Webpage for [goldenroof.org](https://goldenroof.org)
 1. TODO
 
     * blog posts 
-        1. Pictures upload/media
+
         2. General layout for blog posts and Elements(like definition, data sources)
         3. Add share facebbok, twitter, link btns links
     * Add facebook metatags to header
@@ -50,6 +50,7 @@ Webpage for [goldenroof.org](https://goldenroof.org)
     * links in change to django URLs
     * DNS google webmaster verification
     * Sitemap generate
+    * Pictures upload/media(CANSELED)
     
 ## Website sheck
 ### this links should be checked and error resolved

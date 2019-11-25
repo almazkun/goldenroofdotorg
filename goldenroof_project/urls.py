@@ -19,14 +19,10 @@ from django.urls import path, include
 
 from eng.sitemaps import StaticViewSitemap, ArticleSitemap
 
-sitemaps = {
-    "static": StaticViewSitemap(), 
-    "article": ArticleSitemap(),
-}
+sitemaps = {"static": StaticViewSitemap(), "article": ArticleSitemap()}
 
 urlpatterns = [
-    path("admin/", admin.site.urls), 
+    path("admin/", admin.site.urls),
     path("", include("eng.urls")),
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
-     name='sitemap'),
+    path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="sitemap"),
 ]
