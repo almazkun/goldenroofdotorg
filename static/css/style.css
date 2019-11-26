@@ -13,7 +13,7 @@ html {
 }
 
 .c-article-body {
-    width: 680px;
+    max-width: 680px;
 } 
 
 a {
