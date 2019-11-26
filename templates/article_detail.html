@@ -17,7 +17,7 @@
         </div>
         <figure class="mt-4">
             <div class="">
-                <img class="img img-fluid rounded"  src="{% static article.img_link %}">
+                <img class="img img-fluid rounded"  src="{{ article.img_link }}">
             </div>
             <figcaption class="text-center text-muted mt-2">Photo of the Bungdang Hospital</figcaption>
         </figure>
@@ -42,7 +42,7 @@
             <div class="d-none p-1"><i class="fas fa-link"></i></div>
         </div>
         <hr class="bg-light">
-        <div class="d-flex d-none my-4 py-4">
+        <div class="d-none my-4 py-4">
             <div>
                 <img class="c-logo-shape c-logo-size-4" src="{% static 'bundang/2018/author_pic.jpg' %}">
             </div>
