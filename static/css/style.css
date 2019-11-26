@@ -12,6 +12,10 @@ html {
     line-height: 1.1;
 }
 
+.c-article-body {
+    width: 680px;
+} 
+
 a {
     text-decoration: none;
     color: #212529;
