@@ -52,6 +52,6 @@ Webpage for [goldenroof.org](https://goldenroof.org)
     * Sitemap generate
     * Pictures upload/media(CANSELED)
     
-## Website sheck
+## Website check
 ### this links should be checked and error resolved
 https://seositecheckup.com/seo-audit
