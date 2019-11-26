@@ -191,12 +191,6 @@ Based on the 2012 HIRA assessment, the 30-day postoperative mortality rate for g
 
 *Data Source: SNUBH EMR (Electronic Medical Record), HIRA (Health Insurance Review and Assessment Service)*
 
-
-<hr class= "p-5">
-<h2 class="c-display-5"></h2>
-<p class="lead"></p>
-
-
 <hr class= "p-5">
 <h2 class="c-display-5">5-Year Overall Survival of Patients with Gastric Cancer by Stage</h2>
 <p class="lead">The Proportion of patients who did not die within 5 years from the onset of treatment among those who received gastric cancer surgery.</p>
