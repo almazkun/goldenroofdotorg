@@ -6,7 +6,7 @@
 **Gastric cancer**: A form of malignant tumor in the stomach, generally referring to adenocarcinoma.
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_01_Number_of_Stomach_Neoplasm_or_Gastric_Cancer_Surgery_Cases_Seoul_National_University_Bundang_Hospital.jpg" alt="Number_of_Stomach_Neoplasm_or_Gastric_Cancer_Surgery_Cases">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_01_Number_of_Stomach_Neoplasm_or_Gastric_Cancer_Surgery_Cases_Seoul_National_University_Bundang_Hospital.jpg" alt="Number_of_Stomach_Neoplasm_or_Gastric_Cancer_Surgery_Cases">
     <figcaption class="text-muted text-center">Fig. 1. The number of cases stomach neoplasm or gastric cancer.</figcaption>
 </figure>
 
@@ -23,7 +23,7 @@ The number of cases where the patient was diagnosed with a stomach neoplasm or g
 **Robotic surgery:** A method of laparoscopic surgery where the surgeon remote-controls a patient-mounted medical robot, which is a cutting-edge surgical device. 
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_02_Percentage_of_Minimally_Invasive_Surgery_for_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Percentage_of_Minimally_Invasive_Surgery_for_Gastric_Cancer">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_02_Percentage_of_Minimally_Invasive_Surgery_for_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Percentage_of_Minimally_Invasive_Surgery_for_Gastric_Cancer">
     <figcaption class="text-muted text-center">Fig. 2. Number of Minimally invasive surgery (MIS) and open surgery cases.</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ Minimally invasive surgery such as robotic surgery or laparoscopic surgery shows
 **Advanced gastric cancer:** A case where cancer cells have invaded the proper muscle or serosa layer beyond the submucosal layer.
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_03_Percentage_of_Minimally_Invasive_Surgery_for_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Percentage_of_Minimally_Invasive_Surgery_for_Gastric_Cancer">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_03_Percentage_of_Minimally_Invasive_Surgery_for_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Percentage_of_Minimally_Invasive_Surgery_for_Gastric_Cancer">
     <figcaption class="text-muted text-center">Fig. 3. Percentage of minimally invasive surgery for gastric cancer.</figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ Minimally invasive surgery such as robotic surgery or laparoscopic surgery shows
 **Sentinel node navigation surgery:** A form of surgery that preserves the stomach and the vagus nerves maximally, where only the sentinel node prone to metastasis is surgically removed.
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_04_Number_of_Functional_Preservation_Cases_for_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Number_of_Functional_Preservation_Cases_for_Gastric_Cancer">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_04_Number_of_Functional_Preservation_Cases_for_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Number_of_Functional_Preservation_Cases_for_Gastric_Cancer">
     <figcaption class="text-muted text-center">Fig. 4. Percentage of minimally invasive surgery for gastric cancer.</figcaption>
 </figure>
 
@@ -100,14 +100,14 @@ Functional preservation is performed to minimize the loss of the stomach functio
 **Single-port gastrectomy:** A form of oncoplastic surgery performed through a single hole of approx. 2.5 - 3.5 cm made on the umbilicus, based on which the laparoscopic camera and special devices are used.
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_05_Number_of_Single-port_Gastrectomy_Cases_Seoul_National_University_Bundang_Hospital.jpg" alt="Number_of_Single-port_Gastrectomy_Cases">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_05_Number_of_Single-port_Gastrectomy_Cases_Seoul_National_University_Bundang_Hospital.jpg" alt="Number_of_Single-port_Gastrectomy_Cases">
     <figcaption class="text-muted text-center">Fig. 5. Number of Single-port Gastrectomy Cases.</figcaption>
 </figure>
 
 The conventional laparoscopic surgery relies on around 5 holes made on the abdomen and an incision of 3 - 4 cm for taking out the specimens; however, the single-port gastrectomy requires only a single incision of 2.5 cm inside of the umbilicus so that the resulting scar is almost invisible and the recovery time as well as the pain are reduced. The procedure has been performed since 2010, and the number of cases amounts to around 500 cases, which is the largest number of cases in the world. 
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_06_Number_of_Single-port_Gastrectomy_Cases_Seoul_National_University_Bundang_Hospital.jpg" alt="Single-port_Gastrectomy">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_06_Number_of_Single-port_Gastrectomy_Cases_Seoul_National_University_Bundang_Hospital.jpg" alt="Single-port_Gastrectomy">
     <figcaption class="text-muted text-center">Fig. 6. Comparison of Single-port Gastrectomy (left) and Conventional (5 ports) Laparoscopic Gastrectomy (right).</figcaption>
 </figure>
 
@@ -129,7 +129,7 @@ The conventional laparoscopic surgery relies on around 5 holes made on the abdom
 **Clinical pathway (CP):** A standardized clinical course based on a preset sequence of care and treatments optimized for a specific group of diseases or patients. 
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_07_Average_Postoperative_Length_of_Stay_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Average_Postoperative_Length_of_Stay_Gastric_Cancer">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_07_Average_Postoperative_Length_of_Stay_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Average_Postoperative_Length_of_Stay_Gastric_Cancer">
     <figcaption class="text-muted text-center">Fig. 7. Average postoperative length of stay after gastric cancer surgery.</figcaption>
 </figure>
 
@@ -163,7 +163,7 @@ Description of CP for gastric cancer surgery (combined with Early Recovery Progr
 **Major complications:** Complications that require intervention, revision surgery, or intensive treatment (Clavien-Dindo IIla or above).
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_08_Postoperative_Complications_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Postoperative_Complications_Gastric_Cancer">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_08_Postoperative_Complications_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Postoperative_Complications_Gastric_Cancer">
     <figcaption class="text-muted text-center">Fig. 8. Postoperative complications rate after gastric cancer surgery.</figcaption>
 </figure>
 
@@ -180,7 +180,7 @@ The incidence of complications after gastric cancer surgery was found to be arou
 <p class="lead">The proportion of patients who died within 30 days, among those diagnosed with gastric cancer and underwent surgery.</p>
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_09_Thirty_Day_Postoperative_Mortality_Rate_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Thirty_Day_Postoperative_Mortality_Rate_Gastric_Cancer">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_09_Thirty_Day_Postoperative_Mortality_Rate_Gastric_Cancer_Seoul_National_University_Bundang_Hospital.jpg" alt="Thirty_Day_Postoperative_Mortality_Rate_Gastric_Cancer">
     <figcaption class="text-muted text-center">Fig. 9. Thirty-day postoperative mortality rate after gastric cancer surgery.</figcaption>
 </figure>
 
@@ -206,7 +206,7 @@ Based on the 2012 HIRA assessment, the 30-day postoperative mortality rate for g
 * M stands for Metastasis, and defines the stage based on distant metastasis. 
 
 <figure class="my-4">
-    <img class="img img-fluid" src="/static/bundang/2018/pic_10_5-Year_Overall_Survival_of_Patients_with_Gastric_Cancer_by_Stage_Seoul_National_University_Bundang_Hospital.jpg" alt="5-Year_Overall_Survival_of_Patients_with_Gastric_Cancer_by_Stage">
+    <img class="img img-fluid" src="/static/bundang/2018/gastric_cancer/pic_10_5-Year_Overall_Survival_of_Patients_with_Gastric_Cancer_by_Stage_Seoul_National_University_Bundang_Hospital.jpg" alt="5-Year_Overall_Survival_of_Patients_with_Gastric_Cancer_by_Stage">
     <figcaption class="text-muted text-center">Fig. 10. 5-Year overall survivalo of patients with gastric cancer by stage</figcaption>
 </figure>
 
