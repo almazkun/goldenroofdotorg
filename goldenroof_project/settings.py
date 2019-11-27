@@ -160,8 +160,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Security options
-"""
-CSRF_COOKIE_SECURE = False
+
+CSRF_COOKIE_SECURE = True
 
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
@@ -176,7 +176,7 @@ SESSION_COOKIE_SECURE = True
 SECURE_HSTS_SECONDS = 60
 
 SECURE_HSTS_INCLUDE_SUBDOMAINS = 60
-"""
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 

@@ -218,3 +218,7 @@ Stage IV is not included, as it does not involve radical resection. The survival
 **Relevant Research:**
 
 1. Min Sh, Son Sy, Jung Dh, Lee Cm, et al. "Laparoscopic Gastrojejunostomy Versus Duodenal Stenting in Unresectable Gastric Cancer With Gastric Outlet Obstruction", Ann Surg Treat Res, 2017, 93(3), pp. 130-36.
+
+
+**Authors**
+Ahn Sang-Hoon, Kim Hyung-Ho, Park Do-Joong, Park Young-Suk - SNUBH Surgery.
