@@ -113,7 +113,7 @@ The conventional laparoscopic surgery relies on around 5 holes made on the abdom
 
 *Data Source: SNUBH EMR (Electronic Medical Record)*
 
-**Relevant Research:**
+**Relevant Research**
 
 1. Sang-Hoon Ahn, Do Joong Park, and Hyung-Ho Kim. "Single-incision Laparoscopic Distal Gastrectomy for Early Gastric Cancer". Translational Gastrointestinal Cancer 2.2. 2013, pp. 83-86.
 2.Sang-Hoon Ahn, Do Joong Park, et al. "Single Port Gastrectomy for Gastric Cancer". J Minim Invasive Surg, 2016, 19(2), pp. 45-51.
@@ -215,10 +215,10 @@ Stage IV is not included, as it does not involve radical resection. The survival
 
 *Data Source: SNUBH EMR (Electronic Medical Record), Statistics Korea Survival Data, Stages are classified according to the American Joint Committee on Cancer (AJCC) 7th Edition.*
 
-**Relevant Research:**
+**Relevant Research**
 
 1. Min Sh, Son Sy, Jung Dh, Lee Cm, et al. "Laparoscopic Gastrojejunostomy Versus Duodenal Stenting in Unresectable Gastric Cancer With Gastric Outlet Obstruction", Ann Surg Treat Res, 2017, 93(3), pp. 130-36.
 
 
-**Authors**
+### Authors
 Ahn Sang-Hoon, Kim Hyung-Ho, Park Do-Joong, Park Young-Suk - SNUBH Surgery.
