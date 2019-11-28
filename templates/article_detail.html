@@ -28,7 +28,7 @@
             <p class="display-4 text-muted text-center">. . .</p>
         </div>
 
-        <div class="d-flex text-muted">
+        <div class="d-flex flex-wrap text-muted">
             {% for keyword in article.keywords.all %}
                 <p class="p-2 m-1 bg-light rounded">{{ keyword }}</p>
             {% endfor %}
