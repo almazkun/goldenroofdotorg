@@ -13,9 +13,9 @@ def homepage_view(request):
         save_email(email_request)
         try:
             send_email(email_request)
-            return render(request, "succes.html")
+            return render(request, "success.html")
         except:
-            return render(request, "unsucces.html")
+            return render(request, "unsuccess.html")
     return render(request, "home.html")
 
 
