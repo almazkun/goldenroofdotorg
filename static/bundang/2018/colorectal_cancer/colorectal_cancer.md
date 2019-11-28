@@ -1,4 +1,3 @@
-<hr class= "p-5">
 <h2 class="c-display-5">Number of Colorectal Cancer (Colon & Rectal Cancer) Surgery Cases</h2>
 <p class="lead">The number of cases where the patient was diagnosed with colon or rectal cancer either before or after surgery.</p>
 
@@ -60,7 +59,8 @@ The length of stay indicates a decreasing trend, compared to the increased numbe
 *Data Source: SNUBH EMR (Electronic Medical Record)*
 
 **Relevant Research (laws, regulations, assessment criteria, relevant literature, etc.)**
-1. Meng-Tse Gabriel Lee, Chong-Chi Chiu, et al. "Trends and Outcomes of Surgical Treatment for Colorectal Cancer between 2004 and 2012- an Analysis using the National Inpatient Database" rSci Rep, 2017, 7(1)
+
+1. Meng-Tse Gabriel Lee, Chong-Chi Chiu, et al. "Trends and Outcomes of Surgical Treatment for Colorectal Cancer between 2004 and 2012- an Analysis using the National Inpatient Database" rSci Rep, 2017, 7(1).
 
 <hr class= "p-5">
 <h2 class="c-display-5">Percentage of Sphincter Preservation for Rectal Cancer</h2>
@@ -107,6 +107,7 @@ The postoperative complication rate found to be 14 % in 2017.
 *Data Source: SNUBH EMR (Electronic Medical Record)*
 
 **Relevant Research**
+
 1. Meng-Tse Gabriel Lee, Chong-Chi Chiu, et al. "Trends and Outcomes of Surgical Treatment for Colorectal Cancer between 2004 and 2012-an Analysis using the National Inpatient Database". SCIENTIFIC REPORTS, 2006, 7(1), pp. 1-8.
 
 <hr class= "p-5">
@@ -130,6 +131,7 @@ The mortality rate indicates the risk of colorectal cancer surgery, which was fo
 *Data Source: SNUBH EMR (Electronic Medical Record)*
 
 **Relevant Research**
+
 1. Meng-Tse Gabriel Lee, Chong-Chi Chiu, et al. "Trends and Outcomes of Surgical Treatment for Colorectal Cancer between 2004 and 2012-an Analysis using the National Inpatient Database". SCIENTIFIC REPORTS, 2006, 7(1), pp. 1-8.
 2. HIRA Quality Assessment Data for Colorectal Cancer (2016).
 
