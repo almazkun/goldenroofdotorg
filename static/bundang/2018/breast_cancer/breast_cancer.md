@@ -126,5 +126,6 @@ The success rate of breast reconstruction was high and revision surgeries were r
 ### Authors
 
 Chae Su Min, Heo Chan-Yeong, Jeong Jae Hoon, Kwon Hee-Yeon - SNUBH Plastic & Reconstructive Surgery;
+
 Kang Eunyoung, Kang Gyu-Min, Kim Eun-Kyu - SNUBH Surgery.
 
